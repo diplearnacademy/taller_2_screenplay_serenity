@@ -3,7 +3,7 @@ package com.ingjuanfg.questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static com.ingjuanfg.userinterface.ProductoPage.LABEL_TITULO_PAGINA;
+import static com.ingjuanfg.userinterface.ProductoPage.TITLE_PAGINA;
 
 public class AutenticacionEcommerce implements Question<Boolean> {
 
@@ -15,10 +15,11 @@ public class AutenticacionEcommerce implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return nombrePagina.equalsIgnoreCase(LABEL_TITULO_PAGINA.resolveFor(actor).getText());
+        return nombrePagina.equals(TITLE_PAGINA.resolveFor(actor).getText());
     }
 
-    public static AutenticacionEcommerce esExitosa(String nombrePagina){
+    public static AutenticacionEcommerce esExitosa( String nombrePagina){
         return new AutenticacionEcommerce(nombrePagina);
     }
+
 }

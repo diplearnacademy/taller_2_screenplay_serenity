@@ -15,12 +15,11 @@ public class Abrir implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-              Open.browserOn(loginPage)
+                Open.browserOn(loginPage)
         );
     }
 
-    public static Performable elNavegador(){
+    public static Performable paginaWeb(){
         return instrumented(Abrir.class);
     }
-
 }

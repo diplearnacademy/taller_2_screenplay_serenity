@@ -10,16 +10,17 @@ import static com.ingjuanfg.userinterface.LoginPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class Autenticacion implements Task {
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Enter.theValue("standard_user").into(INPUT_USUARIO),
                 Type.theValue("secret_sauce").into(INPUT_PASSWORD),
-                Click.on(BOTON_LOGIN)
+                Click.on(BTN_LOGIN)
         );
     }
 
-    public static Autenticacion enSaucedemo(){
+    public static Autenticacion autenticacionEnSaucedemo(){
         return instrumented(Autenticacion.class);
     }
 }

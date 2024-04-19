@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Este repositorio contiene un escenario de login en Saucedemo con Screenplay y Serenity BDD para comprar con la implementación en Cypress.
+Este repositorio contiene un escenario de login en Saucedemo con Screenplay y Serenity BDD para comparar con la implementación en Cypress.
 
 
 ## Contenido
@@ -13,7 +13,7 @@ Este repositorio contiene un escenario de login en Saucedemo con Screenplay y Se
 
 ## Automatización Screenplay Web
 
-En la rama principal [main](https://github.com/ingjuanfg/screenplay_automation_project "main") encontrarás el Login. El objetivo de este ejemplo es ver una implementacion basica del Patron para realizar la misama en Cypress.
+En la rama principal main encontrarás el Login. El objetivo de este ejemplo es ver una implementacion basica del Patron para realizar la misama en Cypress.
 
 ## Ejecución por Terminal
 
